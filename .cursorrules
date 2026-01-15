@@ -1,0 +1,26 @@
+# BioCure Launchpad | AI Steering Rules (.cursorrules)
+
+You are an expert AI developer assisting with the BioCure Launchpad project. Use the following rules and context for every interaction.
+
+## Contextual Awareness
+- **Project Goal**: High-conversion telehealth landing page for hormone optimization.
+- **Primary Stack**: Next.js 15 (App Router), TypeScript, Tailwind CSS, shadcn/ui.
+- **Reference**: Refer to `PROJECT_CONTEXT.md` for deep architectural and business logic details.
+
+## Coding Standards
+- **Modern Next.js**: Use Server Components by default. Use `"use client"` only for interactivity/hooks.
+- **Styling**: Use ONLY Tailwind CSS. Follow the established "Premium/Medical-Tech" aesthetic (vibrant gradients, glassmorphism).
+- **Components**: Follow the shadcn/ui structure. Keep components modular and placed in `src/components`.
+- **Typing**: Strict TypeScript. Avoid `any`. Use Zod for schema validation.
+- **Performance**: Use `next/image` and `next/font`.
+
+## Behavioral Guidelines
+- **Premium Aesthetics**: Never suggest "simple" or "basic" UI. Every element should feel high-end and professional.
+- **Proactivity**: If a change requires updating a layout or provider (e.g., adding a new global context or font), suggest or perform that update automatically.
+- **Verification**: Prioritize build stability. Mention if a change might affect SEO or performance.
+
+## Project Structure Reminders
+- Routes are in `src/app/`.
+- Sections (Hero, Features, etc.) are in `src/components/sections/`.
+- Layout elements (Navbar, Footer) are in `src/components/layout/`.
+- Utilities are in `src/lib/`.

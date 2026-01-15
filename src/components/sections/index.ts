@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as VSLSection } from "./VSLSection";
+export { default as BenefitsSection } from "./BenefitsSection";
+export { default as WhoItFitsSection } from "./WhoItFitsSection";
+export { default as FeaturesSection } from "./FeaturesSection";
+export { default as TestimonialsSection } from "./TestimonialsSection";
+export { default as HowItWorksSection } from "./HowItWorksSection";
+export { default as PricingSection } from "./PricingSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as FinalCTASection } from "./FinalCTASection";
+export { ModalProvider, useOpenModal } from "./ModalProvider";

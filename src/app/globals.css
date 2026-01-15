@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 150 8% 20%;
+
+    --card: 40 15% 96%;
+    --card-foreground: 150 8% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 8% 20%;
+
+    --primary: 121 13% 63%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 30% 60%;
+    --secondary-foreground: 150 8% 20%;
+
+    --muted: 40 10% 90%;
+    --muted-foreground: 150 5% 35%;
+
+    --accent: 30 22% 83%;
+    --accent-foreground: 150 8% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 121 13% 63%;
+
+    --radius: 0.75rem;
+
+    /* BioCure Brand Colors */
+    --biocure-sage: 121 13% 63%;
+    --biocure-gold: 43 50% 40%;
+    --biocure-cream: 30 22% 83%;
+    --biocure-light-gray: 40 5% 84%;
+    --biocure-mint: 100 18% 90%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(100 18% 92%) 0%, hsl(40 20% 96%) 50%, hsl(30 22% 90%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(40 15% 97%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 45% 65%) 0%, hsl(43 37% 55%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(121 13% 63% / 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(150 8% 20% / 0.1);
+    --shadow-gold: 0 4px 20px -4px hsl(43 37% 61% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 15% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 150 12% 14%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 150 12% 14%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 121 13% 63%;
+    --primary-foreground: 150 15% 10%;
+
+    --secondary: 43 30% 50%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 150 10% 20%;
+    --muted-foreground: 40 10% 65%;
+
+    --accent: 150 10% 20%;
+    --accent-foreground: 40 20% 95%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 40 20% 95%;
+
+    --border: 150 10% 20%;
+    --input: 150 10% 20%;
+    --ring: 121 13% 63%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(43 45% 60%) 0%, hsl(43 37% 50%) 100%);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
