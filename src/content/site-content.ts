@@ -76,20 +76,19 @@ export const siteContent = {
     // META / SEO
     // --------------------------------------------------------------------------
     meta: {
-        title: "Biocure",
-        description: "Accelerating biotech innovation",
+        title: "BioCure",
+        description: "Hormone Replacement Therapy (HRT) for Perimenopausal Women (40s - Early 50s)",
     },
 
     // --------------------------------------------------------------------------
     // NAVBAR
     // --------------------------------------------------------------------------
     navbar: {
-        logoAlt: "BioCure Health",
-        ctaButton: "Schedule Your Free 15-Min Intro Call",
+        logoAlt: "BioCure",
+        ctaButton: "Schedule My Consultation",
         navLinks: [
             { label: "How It Works", href: "#how-it-works" },
-            { label: "Results", href: "#testimonials" },
-            { label: "Pricing", href: "#pricing" },
+            { label: "Symptoms", href: "#symptoms" },
             { label: "FAQ", href: "#faq" },
         ] as NavLink[],
     },
@@ -98,48 +97,49 @@ export const siteContent = {
     // HERO SECTION
     // --------------------------------------------------------------------------
     hero: {
-        kicker: "Finally understand why the gym isn't working",
+        kicker: "You're not losing your mind. You're losing your hormones.",
         headline: {
-            main: "Training Hard But Looking Soft?",
-            highlight: "It's Not Your Fault.",
+            main: "The Exhaustion, The Fog, The Weight Gain—",
+            highlight: "It's Not In Your Head. It's In Your Hormones.",
         },
-        subheadline: "Most guys under 30 assume their testosterone is fine because they're \"young.\" That's like assuming your car runs great just because it's new—without ever checking the oil. One blood test reveals whether biology is working for you or against you.",
-        primaryCta: "Schedule Your Free 15-Min Intro Call",
-        microCopy: "Takes 2 minutes. Speak with a physician this week.",
-        secondaryCta: "Watch: What Our Physicians Want You to Know",
+        subheadline: "The rage that comes out of nowhere. The 3am wake-ups drenched in sweat. The brain fog that makes you feel like you're losing your edge. The weight that appeared and won't leave. You've been to your doctor. They said your labs are \"normal\" or handed you an antidepressant. But you know something is off. You're right. It's called perimenopause—and it starts years before your period actually stops. The good news? It's completely treatable.",
+        primaryCta: "Schedule My Consultation",
+        microCopy: "Finally get answers. Speak with a hormone specialist this week.",
+        secondaryCta: "Watch: Our Specialist Explains The Science In Depth",
     },
 
     // --------------------------------------------------------------------------
     // VSL SECTION
     // --------------------------------------------------------------------------
     vsl: {
-        duration: "3:45",
-        caption: "Watch how we're helping men reclaim their energy, focus, and vitality",
+        videoId: "K0-I4bZlfu4",
+        duration: "",
+        caption: "Watch: Our Specialist Explains The Science In Depth",
     },
 
     // --------------------------------------------------------------------------
-    // BENEFITS SECTION
+    // BENEFITS SECTION (Mapped to Symptoms ID as requested)
     // --------------------------------------------------------------------------
     benefits: {
         header: {
-            main: "What Happens When Your",
-            highlight: "Hormones Are Optimized",
+            main: "What Changes When Your Hormones Are Balanced",
+            highlight: "",
         },
         items: [
             {
-                icon: Dumbbell,
-                title: "Build Muscle That Actually Shows",
-                description: "Stop spinning your wheels. When your T is optimized, the same workout gives you 2-3x the results.",
+                icon: Moon,
+                title: "Sleep Through the Night Again",
+                description: "No more 3am wake-ups. No more soaked sheets. Fall asleep, stay asleep, and wake up actually rested.",
             },
             {
-                icon: Zap,
-                title: "Energy Without the Crash",
-                description: "No more 3pm slump. Wake up ready to go and stay sharp until you decide to sleep—not when your body forces you.",
+                icon: Brain,
+                title: "Get Your Brain Back",
+                description: "The fog lifts. Words come back. You can focus, remember, and think clearly again—like yourself.",
             },
             {
-                icon: Flame,
-                title: "Lose the \"Skinny Fat\" Look",
-                description: "Finally see definition. Optimized hormones torch stubborn belly fat while preserving muscle—no starvation required.",
+                icon: Target,
+                title: "A Body That Responds Again",
+                description: "The stubborn weight starts to shift. Your metabolism wakes up. Your body finally cooperates with your efforts.",
             },
         ] as Benefit[],
     },
@@ -149,29 +149,39 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     whoItFits: {
         header: {
-            main: "Is This",
-            highlight: "You?",
+            main: "Does This Sound Like You?",
+            highlight: "",
         },
         personas: [
             {
-                icon: Dumbbell,
-                title: "The Frustrated Gym-Goer",
-                description: "You're in the gym 4-5 days a week. You eat right. You do everything the influencers say. But you still look the same as the guy who plays video games and eats pizza. You're starting to wonder if something is actually wrong with you.",
-            },
-            {
                 icon: Moon,
-                title: "The Always-Tired Achiever",
-                description: "You're 24 but you feel 44. Coffee gets you to 10am. By 3pm you're running on fumes. Your friends are out living their lives while you're calculating how many hours until you can crash on the couch.",
+                title: "The Woman Who Can't Sleep",
+                description: "You wake up at 3am like clockwork—heart racing, drenched in sweat. Sometimes you can fall back asleep. Sometimes you're up for hours. You can't remember the last time you slept through the night and actually felt rested.",
             },
             {
-                icon: Target,
-                title: "The Ambitious One Who's Falling Behind",
-                description: "You've got goals—career, physique, relationships. But lately the drive isn't there. The guys around you seem to have an edge you don't. You're putting in the work but not getting the same returns.",
+                icon: Flame,
+                title: "The Woman With The Short Fuse",
+                description: "You used to be patient. Now you snap at your kids, your partner, your coworkers. The rage comes out of nowhere and you feel out of control. This isn't who you are—but you can't seem to stop it.",
             },
             {
                 icon: Brain,
-                title: "The Foggy Thinker",
-                description: "Your brain used to be sharp. Now you're forgetting things, losing focus mid-conversation, struggling to concentrate. You're too young to feel this mentally slow—but here you are.",
+                title: "The Woman Losing Her Edge",
+                description: "You walk into rooms and forget why. Words vanish mid-sentence. You used to be sharp—now you're scared you're losing it. You've googled \"early dementia\" more than once. But it's not that. It's your hormones.",
+            },
+            {
+                icon: Target,
+                title: "The Woman Fighting Her Body",
+                description: "You eat well. You exercise. You've tried every diet. But the weight around your middle just appeared one day and refuses to leave. Your body has stopped responding to everything that used to work.",
+            },
+            {
+                icon: User,
+                title: "The Woman Who Feels Like a Stranger",
+                description: "The spark is gone. You have zero interest in intimacy. You feel disconnected from your body, from your partner, from yourself. You've been handed antidepressants, but you know this isn't depression—it's something else.",
+            },
+            {
+                icon: Stethoscope,
+                title: "The Woman Who's Been Dismissed",
+                description: "You've been to your doctor. They ran some tests, told you your labs are \"normal,\" and offered you an SSRI. But you know your body. Something is wrong. You just haven't found someone who actually listens.",
             },
         ] as Persona[],
     },
@@ -181,39 +191,44 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     features: {
         header: {
-            main: "Everything You Get With",
-            highlight: "BioCure",
+            main: "Complete, Personalized",
+            highlight: "Hormone Care",
         },
         items: [
             {
                 icon: TestTube,
                 title: "Comprehensive Hormone Panel",
-                description: "Not just total T. We test bioavailable testosterone, SHBG, estradiol, and 8 other markers most clinics ignore.",
+                description: "We test what matters: estrogen, progesterone, testosterone, thyroid, cortisol, and more. The full picture—not just FSH and a shrug.",
             },
             {
                 icon: Stethoscope,
-                title: "Board-Certified Physician Review",
-                description: "A real doctor (not an algorithm) analyzes your results and builds your protocol.",
+                title: "Physician Who Specializes in Women's Hormones",
+                description: "Not a generalist who dismisses your symptoms. A doctor who understands perimenopause, listens to your experience, and treats the root cause.",
             },
             {
-                icon: User,
-                title: "Personalized Treatment Plan",
-                description: "Cookie-cutter doesn't work. Your protocol is designed for YOUR biology and goals.",
+                icon: ClipboardCheck,
+                title: "Personalized Protocol",
+                description: "Bioidentical hormones tailored to YOUR labs, YOUR symptoms, YOUR body. No cookie-cutter solutions.",
+            },
+            {
+                icon: Package,
+                title: "Multiple Delivery Options",
+                description: "Creams, patches, pellets, or oral—whatever works best for your lifestyle and preference.",
             },
             {
                 icon: Package,
                 title: "Medication Delivered to Your Door",
-                description: "Pharmacy-grade. Discreet packaging. No awkward pickup conversations.",
+                description: "Pharmaceutical-grade, from licensed pharmacies. Discreet packaging.",
             },
             {
                 icon: MessageCircle,
-                title: "Ongoing Physician Access",
-                description: "Questions at 10pm? Message your care team anytime. No appointment needed.",
+                title: "Ongoing Support & Adjustments",
+                description: "Your hormones change. So does your protocol. Message your care team anytime with questions.",
             },
             {
                 icon: FlaskConical,
-                title: "Quarterly Optimization Labs",
-                description: "We don't guess. We test every 90 days and adjust your protocol for continuous improvement.",
+                title: "Regular Monitoring",
+                description: "We track your levels, symptoms, and progress. Adjust as needed. This isn't set-it-and-forget-it medicine.",
             },
         ] as Feature[],
     },
@@ -223,8 +238,8 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     testimonials: {
         header: {
-            main: "Real Results From",
-            highlight: "Real Patients",
+            main: "Women Who Got Themselves Back",
+            highlight: "",
         },
         ratingText: "5.0 on Google Reviews",
         verifiedLabel: "Verified Patient",
@@ -267,50 +282,44 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     howItWorks: {
         header: {
-            main: "Get Started in",
-            highlight: "3 Simple Steps",
+            main: "A Simple Process That",
+            highlight: "Actually Puts You First",
         },
         steps: [
             {
                 icon: ClipboardCheck,
                 step: "Step 1",
-                title: "Schedule Your Free 15-Min Intro Call",
-                description: "2-minute quiz about your symptoms, goals, and lifestyle. No credit card required.",
+                title: "Tell Us What's Going On",
+                description: "Complete a symptom questionnaire that actually asks the right questions. Takes about 5 minutes.",
             },
             {
                 icon: FlaskConical,
                 step: "Step 2",
-                title: "Get Your Labs Done",
-                description: "We send you a lab order. Walk into any Quest or Labcorp near you. In and out in 10 minutes.",
+                title: "Get Complete Lab Work",
+                description: "We send you a lab order. Visit any Quest or Labcorp at your convenience. Comprehensive panel—not just the basics.",
             },
             {
-                icon: Rocket,
+                icon: Stethoscope,
                 step: "Step 3",
-                title: "Start Your Protocol",
-                description: "Meet with your physician. Get your personalized plan. Medication ships to your door within days.",
+                title: "Meet With Your Physician",
+                description: "Video consultation with a hormone specialist who will actually listen. Review your labs, discuss options, build your plan together.",
             },
         ] as Step[],
     },
 
     // --------------------------------------------------------------------------
-    // PRICING SECTION
+    // PRICING SECTION - REMOVED
     // --------------------------------------------------------------------------
     pricing: {
         header: {
-            main: "Transparent Pricing.",
-            highlight: "No Hidden Fees.",
+            main: "",
+            highlight: "",
         },
-        priceAnchor: "Less than your gym membership. More impactful than every supplement you've wasted money on combined.",
-        price: "$125",
-        description: "Consultation + Labs + Meds",
-        ctaButton: "Get Started Now",
-        features: [
-            "Consultation with board-certified physician",
-            "Comprehensive hormone panel labs",
-            "Personalized treatment plan",
-            "Medication delivered to your door",
-            "Ongoing physician access",
-        ],
+        priceAnchor: "",
+        price: "",
+        description: "",
+        ctaButton: "",
+        features: [],
     },
 
     // --------------------------------------------------------------------------
@@ -318,29 +327,33 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     faq: {
         header: {
-            main: "Questions?",
-            highlight: "We've Got Answers.",
+            main: "Your Questions,",
+            highlight: "Answered",
         },
         items: [
             {
-                question: "I'm under 30—isn't testosterone therapy for older guys?",
-                answer: "That's what most people think. But here's the reality: testosterone levels in men have dropped 1% per year for decades. A 25-year-old today has significantly lower T than his dad did at the same age. We've tested thousands of men under 30—and you'd be shocked how many are running on empty. Age doesn't protect you from environmental factors, poor sleep, stress, and modern lifestyle factors that tank your hormones.",
+                question: "I thought menopause happens in your 50s. Can perimenopause really start in my 40s?",
+                answer: "Yes—and this is one of the biggest gaps in women's health education. Perimenopause can start 8-10 years before your period actually stops. That means many women begin experiencing symptoms in their early-to-mid 40s (sometimes even late 30s). During this time, hormone levels fluctuate wildly—which is why symptoms can be so unpredictable. The tragedy is that most doctors don't recognize it, leaving millions of women thinking they're \"going crazy\" when their hormones are simply shifting.",
             },
             {
-                question: "Is this safe? Will it affect my fertility?",
-                answer: "Safety is our top priority. Every protocol is designed by board-certified physicians who specialize in hormone optimization. For fertility, we have specific protocols that include HCG to maintain testicular function and sperm production. We monitor your labs quarterly and adjust as needed. This isn't a one-size-fits-all approach—it's precision medicine.",
+                question: "Is hormone therapy safe? I've heard conflicting things.",
+                answer: "This is the most important question—and there's been a lot of confusion. The 2002 WHI study created fear around HRT, but it's been largely misinterpreted. That study looked at older women (average age 63) using older synthetic hormones. Current research shows that for women in perimenopause and early menopause, bioidentical hormone therapy initiated within 10 years of menopause onset is associated with significant benefits and very low risks. We use bioidentical hormones, individualized dosing, and regular monitoring. Every protocol is designed by physicians who specialize in this field.",
             },
             {
-                question: "How is this different from steroids?",
-                answer: "Night and day. Steroids are illegal, unregulated, and typically dosed at 5-10x physiological levels. We're restoring your testosterone to optimal natural levels—where you'd be if your body was functioning at its best. Everything is physician-supervised, pharmaceutical-grade, and carefully monitored. Think of it as fixing a deficiency, not giving you superhuman levels.",
+                question: "My doctor tested my hormones and said everything is \"normal.\" But I feel terrible.",
+                answer: "This is the most common complaint we hear. Standard lab panels often only test FSH—which isn't useful for perimenopausal women because hormones fluctuate day to day. Even when they test more, \"normal\" reference ranges are extremely wide and don't reflect optimal levels. Plus, many doctors aren't trained to correlate symptoms with hormone patterns. We run comprehensive panels and—more importantly—we listen to how you actually feel. Your symptoms matter as much as your numbers.",
             },
             {
-                question: "How fast will I see results?",
-                answer: "Most guys notice improved energy and mental clarity within 2-3 weeks. Gym performance and recovery improvements typically show up around weeks 4-6. Body composition changes—less fat, more muscle—become visible around weeks 8-12. Full optimization takes about 3-6 months, which is why we do quarterly labs to dial in your protocol.",
+                question: "Will I gain weight on hormone therapy?",
+                answer: "Actually, the opposite is more common. Declining estrogen and progesterone often cause weight gain—especially around the midsection—and make it nearly impossible to lose. Many women find that once their hormones are balanced, their metabolism improves, cravings decrease, and their body finally responds to diet and exercise again. Weight gain is a symptom of hormone imbalance, not a side effect of treating it.",
             },
             {
-                question: "What if my levels come back normal?",
-                answer: "\"Normal\" is a range designed for the average guy—including 80-year-olds. We look at optimal levels for your age and goals. If your labs truly show you're optimized, we'll tell you. No upsell, no pressure. We'll also identify other factors that might be causing your symptoms (thyroid, vitamin D, sleep issues) and point you in the right direction.",
+                question: "How quickly will I feel better?",
+                answer: "Most women notice improvements in sleep and hot flashes within 2-4 weeks. Mood stabilization often follows closely. Brain fog typically starts lifting within the first month. Energy and libido improvements usually take 4-8 weeks. Body composition changes take longer—typically 2-3 months. Everyone responds differently, which is why we monitor your progress and adjust as needed. This isn't a quick fix—it's restoring balance.",
+            },
+            {
+                question: "What about breast cancer risk?",
+                answer: "We take this concern very seriously. Current evidence shows that for most women, bioidentical estrogen combined with bioidentical progesterone (not synthetic progestins) does not significantly increase breast cancer risk when used appropriately. We screen for risk factors, discuss your family history, and make individualized recommendations. We also use the lowest effective doses and monitor regularly. For women with significant risk factors, we discuss alternatives. Your safety always comes first.",
             },
         ] as FAQ[],
     },
@@ -350,24 +363,26 @@ export const siteContent = {
     // --------------------------------------------------------------------------
     finalCTA: {
         headline: {
-            main: "Stop Guessing.",
-            highlight: "Start Knowing.",
+            main: "You've Taken Care of Everyone Else.",
+            highlight: "It's Time to Take Care of You.",
         },
-        subheadline: "You've read this far because something isn't working. You're putting in the effort but not getting the results. One test can tell you if biology is the problem. If it is, we fix it. If it's not, you'll know—and you can rule it out for good.",
-        ctaButton: "Schedule Your Free 15-Min Intro Call",
-        socialProof: "Join 10,000+ men who stopped guessing and started optimizing.",
-        urgency: "Limited spots available for new patients this month.",
+        subheadline: "You've spent years putting everyone first—your kids, your partner, your career, your aging parents. Somewhere along the way, you stopped prioritizing yourself. But you can't pour from an empty cup. And you deserve to feel like yourself again. One consultation can tell you if your hormones are at the root of what you're experiencing. If they are, we can help.",
+        ctaButton: "Schedule My Consultation",
+        socialProof: "Join thousands of women who stopped suffering and started living.",
+        urgency: "Appointments fill quickly. Secure your spot today.",
     },
 
     // --------------------------------------------------------------------------
     // FOOTER
     // --------------------------------------------------------------------------
     footer: {
-        logoAlt: "BioCure Health",
-        about: "BioCure provides telehealth services for hormone optimization. Individual results vary.",
+        logoAlt: "BioCure",
+        about: "BioCure provides telehealth services for hormone optimization. Individual results vary. Treatment requires physician evaluation and ongoing monitoring.",
         trustBadges: [
+            { text: "HIPAA Compliant" },
             { text: "Board-Certified Physicians" },
-            { text: "FDA-Approved Pharmacies" },
+            { text: "Bioidentical Hormones" },
+            { text: "Ongoing Monitoring" },
         ],
         legal: {
             title: "Legal",
@@ -377,8 +392,7 @@ export const siteContent = {
             title: "Menu",
             links: [
                 { label: "How It Works", href: "#how-it-works" },
-                { label: "Results", href: "#benefits" },
-                { label: "Pricing", href: "#pricing" },
+                { label: "Symptoms", href: "#symptoms" },
                 { label: "FAQ", href: "#faq" },
             ] as NavLink[],
         },
@@ -391,21 +405,21 @@ export const siteContent = {
                 { platform: "youtube", url: "https://www.youtube.com/@biocurehealth", ariaLabel: "YouTube" },
             ] as SocialLink[],
         },
-        copyright: "BioCure Health. All rights reserved.",
-        disclaimer: "Consult with your physician before starting any treatment.",
+        copyright: "BioCure. All rights reserved.",
+        disclaimer: "BioCure provides telehealth services for hormone optimization. Individual results vary. Treatment requires physician evaluation and ongoing monitoring.",
     },
 
     // --------------------------------------------------------------------------
     // LEAD MODAL
     // --------------------------------------------------------------------------
     leadModal: {
-        title: "Schedule Your Free 15-Min Intro Call",
+        title: "Schedule My Consultation",
         description: "Complete the form below to begin your hormone optimization journey.",
         form: {
             nameLabel: "Full Name",
-            namePlaceholder: "John Doe",
+            namePlaceholder: "Jane Doe",
             emailLabel: "Email Address",
-            emailPlaceholder: "john@example.com",
+            emailPlaceholder: "jane@example.com",
             phoneLabel: "Phone Number",
             phonePlaceholder: "(555) 000-0000",
             submitButton: "Schedule Now",

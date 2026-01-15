@@ -24,7 +24,6 @@ export default function Home() {
                 <FeaturesSection />
                 <TestimonialsSection />
                 <HowItWorksSection />
-                <PricingSection />
                 <FAQSection />
                 <FinalCTASection />
                 <Footer />

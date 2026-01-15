@@ -9,7 +9,7 @@ const VSLSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // YouTube Video ID
-  const videoId = "AfjQs2lnQy0";
+  const videoId = vsl.videoId;
 
   // YouTube thumbnail URL (hqdefault for optimal size/quality balance on mobile)
   const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
