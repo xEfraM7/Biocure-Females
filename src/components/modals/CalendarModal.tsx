@@ -9,8 +9,8 @@ const { leadModal } = siteContent;
 
 // Go High Level Configuration
 const GHL_CONFIG = {
-    calendarId: "yLMUmpEtzQioIMeq9VQg",
-    locationId: "PsWjpnbWPFGvoZdwuZ59",
+    calendarId: "8x1BzuE9XL53vQ4BO5ni",
+    locationId: "gPVdo0TzIYGrIdW3NEZ1",
 };
 
 interface CalendarModalProps {
